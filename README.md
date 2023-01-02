@@ -1,15 +1,4 @@
-# Projet 4 - Créez un blog pour un écrivain
-
-Énoncé
---
-
- Vous venez de décrocher un contrat avec Jean Forteroche, acteur et écrivain. Il travaille actuellement sur son prochain roman, "Billet simple pour l'Alaska". Il souhaite innover et le publier par épisode en ligne sur son propre site.
-
-Seul problème : Jean n'aime pas WordPress et souhaite avoir son propre outil de blog, offrant des fonctionnalités plus simples. Vous allez donc devoir développer un moteur de blog en PHP et MySQL.
-
-
-![alt tag](https://s3-eu-west-1.amazonaws.com/sdz-upload/prod/upload/livre%20sable_80715814_magentael.jpg)
-
+# Projet 4 - Créez un blog 
 
 Vous développerez une application de blog simple en PHP et avec une base de données MySQL. Elle doit fournir une interface frontend (lecture des billets) et une interface backend (administration des billets pour l'écriture). On doit y retrouver tous les éléments d'un CRUD :
 
