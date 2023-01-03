@@ -81,7 +81,7 @@ class Admin extends Blog
             $this->oUtil->getModel('Admin');
             $this->oModel = new \BlogPhp\Model\Admin;
 
-            $aData = array('post_id' => $_GET['id'], 'title' => $_POST['title'], 'body' => $_POST['body'], 'created_date' => date('Y-m-d H:i:s'), 'hauteurCM' => $_POST['hauteurCM'], 'feuillage' => $_POST['feuillage'], 'floraison' => $_POST['floraison'], 'modeVie' => $_POST['modeVie'], 'nomCommun' => $_POST['nomCommun']);
+            $aData = array('title' => $_POST['title'], 'body' => $_POST['body'], 'created_date' => date('Y-m-d H:i:s'), 'hauteurCM' => $_POST['hauteurCM'], 'feuillage' => $_POST['feuillage'], 'floraison' => $_POST['floraison'], 'modeVie' => $_POST['modeVie'], 'nomCommun' => $_POST['nomCommun']);
             $this->oModel->add($aData);
 
             if (!empty($_FILES['image']['name']))

@@ -189,10 +189,9 @@ class Admin extends Blog
 
   public function add(array $aData)
   {
-    $oStmt = $this->oDb->prepare('INSERT INTO Posts (title, body, createdDate, nomCommun, hauteurCM, feuillage, floraison, modeVie) VALUES(:title, :body, :created_date, :nomCommun, :hauteurCM, :feuillage, :floraison, :modeVie)');
+    $oStmt = $this->oDb->prepare('INSERT INTO Posts (title, body, nomCommun, hauteurCM, feuillage, floraison, modeVie) VALUES(:title, :body, :nomCommun, :hauteurCM, :feuillage, :floraison, :modeVie)');
     $oStmt->bindValue(':title', $aData['title'], \PDO::PARAM_STR);
     $oStmt->bindValue(':body', $aData['body'], \PDO::PARAM_LOB);
-    $oStmt->bindValue(':createdDate', $aData['created_date'], \PDO::PARAM_STR);
     $oStmt->bindValue(':nomCommun', $aData['nomCommun'], \PDO::PARAM_STR);
     $oStmt->bindValue(':hauteurCM', $aData['hauteurCM'], \PDO::PARAM_INT);
     $oStmt->bindValue(':feuillage', $aData['feuillage'], \PDO::PARAM_STR);
